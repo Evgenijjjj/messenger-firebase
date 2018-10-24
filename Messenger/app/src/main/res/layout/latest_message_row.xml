@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraintLayout"
+    android:background="@drawable/rounded_field_row"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_latest_row"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_width="3dp"/>
+
+    <TextView
+        android:id="@+id/username_latest_massage_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView_latest_row"
+        app:layout_constraintTop_toTopOf="@+id/circleImageView_latest_row" />
+
+    <TextView
+        android:id="@+id/latestmassage_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:maxLines="3"
+        android:paddingHorizontal="4dp"
+        android:text="Latest Message for example\nex1\nex2"
+        android:padding="3dp"
+        android:textColor="@color/hintColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView_latest_row"
+        app:layout_constraintTop_toBottomOf="@+id/username_latest_massage_row"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/time_latest_message_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="12:20"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/constraintLayout"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"/>
+
+</android.support.constraint.ConstraintLayout>

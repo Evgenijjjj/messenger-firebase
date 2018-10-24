@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/dark_nature"
+    android:padding="20dp">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress_bar_login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:cpb_background_progressbar_color="#FFCDD2"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progressbar_color="#008000"
+        app:cpb_progressbar_width="10dp"
+        android:visibility="invisible"/>
+
+<LinearLayout
+    android:id="@+id/edit_fields_ll_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_weight="99999"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+
+    <EditText
+        android:id="@+id/email_edittext_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_field"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/tintColor"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/password_edittext_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="@drawable/input_field"
+        android:hint="@string/password"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/tintColor"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/login_button_login"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:background="@drawable/submit_btn"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/back_to_registartion_text_view_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back to registration"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+</FrameLayout>
