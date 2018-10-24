@@ -7,7 +7,7 @@ Register Activity | Login AActivity
 
 Users List | Search User
 :-------------:|:-------------:
-<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/users_list.png" width="309" height="550">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/search_user.png" width="309" height="550"> 
+<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/search_users_list.png" width="309" height="550">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/users_list2.png" width="309" height="550"> 
         
         
 Latest Messages | Chat
