@@ -1,6 +1,6 @@
 # Messenger
 
-Register Activity | Login AActivity
+Register | Login
 :-------------:|:-------------:
 <img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/register_activity.png" width="309" height="550">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/login_activity.png" width="309" height="550">
 
