@@ -7,4 +7,37 @@
     <color name="white">#fff</color>
     <color name="black">#b1b1b1</color>
     <color name="hintColor">#cccccc</color>
+    <color name="inputHintColor">#808080</color>
+    <color name="star1">#FFA500</color>
+    <color name="star2">#FFD700</color>
+    <color name="greyStar">#C0C0C0</color>
+
+    <color name="met1">#FFFF00</color>
+    <color name="met2">#FF4500</color>
+    <color name="met3">#E6E6FA</color>
+    <color name="met4">#FFFFE0</color>
+
+    <color name="def_space">#4B0082</color>
+    <color name="def_space2">#000080</color>
+    <color name="def_space3">#000053</color>
+
+
+    <integer-array name="star_colors_small">
+        <item>@color/white</item>
+        <item>@color/star1</item>
+        <item>@color/star2</item>
+    </integer-array>
+
+    <integer-array name="star_colors_for_chat_activity">
+        <item>@color/greyStar</item>
+    </integer-array>
+
+
+    <integer-array name="meteorites_colors">
+
+        <item>@color/met1</item>
+        <item>@color/met2</item>
+        <item>@color/met3</item>
+        <item>@color/met4</item>
+    </integer-array>
 </resources>

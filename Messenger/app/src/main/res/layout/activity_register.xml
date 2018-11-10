@@ -11,14 +11,37 @@
     android:id="@+id/screen_register">
 
 
+
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
         android:layout_weight="9999">
 
+
+        <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/ripple_photo_background_register"
+            app:rb_color="#000"
+            app:rb_radius="12dp"
+            app:rb_rippleAmount="10"
+            app:rb_duration="2000"
+            app:rb_scale="12">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/center_ripple_photo_background_register"
+                android:src="@android:color/transparent"/>
+        </com.skyfishjy.library.RippleBackground>
+
+
         <Button
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:id="@+id/photo_button_register"
             android:layout_width="180dp"
             android:layout_height="180dp"
@@ -31,7 +54,7 @@
             android:id="@+id/selectphoto_imageview_register"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:visibility="invisible" />
 
         <com.mikhaellopez.circularprogressbar.CircularProgressBar
@@ -46,7 +69,22 @@
             app:cpb_progressbar_width="10dp"
             android:visibility="invisible"/>
 
+        <at.markushi.ui.CircleButton
+            android:id="@+id/rotate_picture"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:padding="14dp"
+            android:scaleType="center"
+            android:src="@drawable/rotating_right"
+            android:visibility="invisible"
+            app:cb_color="#000"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            app:cb_pressedRingWidth="8dip" />
+
     </FrameLayout>
+
 
     <LinearLayout
         android:id="@+id/edit_fields_ll_register"

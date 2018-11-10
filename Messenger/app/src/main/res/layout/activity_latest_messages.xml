@@ -5,18 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.LatestMessagesActivity"
-    android:background="@drawable/palms_bg">
+    android:background="@color/def_space3">
 
     <include layout="@layout/toolbar" />
 
-    <android.support.v7.widget.RecyclerView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sofakingforever.stars.AnimatedStarsView
+            android:id="@+id/stars_latest_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:starsView_bigStarThreshold="10dp"
+            app:starsView_meteoritesColors="@array/meteorites_colors"
+            app:starsView_meteoritesEnabled="true"
+            app:starsView_meteoritesInterval="2000"
+            app:starsView_maxStarSize="16dp"
+            app:starsView_minStarSize="1dp"
+            app:starsView_starColors="@array/star_colors_small"
+            app:starsView_starCount="50" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/username_latest_messages"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="?android:actionBarSize"
-        android:id="@+id/recyclerview_latest_messages"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold"
+        android:textSize="15dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_latest_messages"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.yalantis.phoenix.PullToRefreshView>
+
 </android.support.constraint.ConstraintLayout>

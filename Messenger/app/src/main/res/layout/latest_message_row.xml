@@ -45,7 +45,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:maxLines="3"
+        android:maxLines="2"
         android:paddingHorizontal="4dp"
         android:text="Latest Message for example\nex1\nex2"
         android:padding="3dp"

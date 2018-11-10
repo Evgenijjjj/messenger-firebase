@@ -1,5 +1,6 @@
 package com.example.admin.messenger.activities
 
+import android.app.Notification
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -100,7 +101,9 @@ class ChatActivity : AppCompatActivity() {
         val latestMessageRef = FirebaseDatabase.getInstance().getReference("/latest-messages/$fromId/$toId").push()
         val latestMessageToRef = FirebaseDatabase.getInstance().getReference("/latest-messages/$toId/$fromId").push()
 
+        val notificationRef = FirebaseDatabase.getInstance().getReference("/Notifications/$toId").push()
 
+        //val notification = Notification("text", "jbjbj")
 
         val chatMessage = ChatMessage(fromRef.key!!, text, fromId!!, toId, System.currentTimeMillis() / 1000)
         fromRef.setValue(chatMessage)
@@ -108,17 +111,30 @@ class ChatActivity : AppCompatActivity() {
                     Log.d("ChatActivity", "Successful sending message to Firebase database, key: ${fromRef.key}")
                     recyclerview_chat.scrollToPosition(adapter.itemCount -1)
                 }
-        toRef.setValue(chatMessage)
+            toRef.setValue(chatMessage)
+
         latestMessageRef.setValue(chatMessage)
                 .addOnFailureListener {
                     Log.d("ChatActivity", "Error sending message to latest database, key: ${it.message}")
                 }
         latestMessageToRef.setValue(chatMessage)
+
+        notificationRef.setValue(chatMessage)
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
         overridePendingTransition(R.anim.abc_slide_in_bottom, R.anim.abc_slide_out_top)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        stars_chat_activity.onStart()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        stars_chat_activity.onStop()
     }
 }
 

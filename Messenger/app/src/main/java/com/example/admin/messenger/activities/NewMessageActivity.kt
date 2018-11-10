@@ -3,8 +3,11 @@ package com.example.admin.messenger.activities
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.DividerItemDecoration
+import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.SearchView
 import android.support.v7.widget.Toolbar
+import android.util.LayoutDirection
 import android.util.Log
 import com.example.admin.messenger.models.User
 import com.google.firebase.database.DataSnapshot
@@ -42,11 +45,11 @@ class NewMessageActivity : AppCompatActivity() {
         listOfUsers = ArrayList<User>()
 
         uploadUsersFromFirebaseDatabase()
+        recyclerview_newmessage.addItemDecoration(DividerItemDecoration(this, 1))
     }
 
     private fun uploadUsersFromFirebaseDatabase() {
         val ref = FirebaseDatabase.getInstance().getReference("/users")
-
         ref.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
             }
@@ -130,6 +133,16 @@ class NewMessageActivity : AppCompatActivity() {
         }
 
         adapter?.notifyDataSetChanged()
+    }
+
+    override fun onStart() {
+        stars_new_message.onStart()
+        super.onStart()
+    }
+
+    override fun onStop() {
+        stars_new_message.onStop()
+        super.onStop()
     }
 }
 

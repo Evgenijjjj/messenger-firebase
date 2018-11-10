@@ -6,6 +6,8 @@ import android.inputmethodservice.Keyboard
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.daimajia.androidanimations.library.Techniques
+import com.daimajia.androidanimations.library.YoYo
 import com.example.admin.messenger.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
@@ -69,5 +71,10 @@ class LoginActivity : Activity() {
         progress_bar_login.visibility = View.INVISIBLE
 
         edit_fields_ll_login.visibility = View.VISIBLE
+
+        YoYo.with(Techniques.Tada)
+                .duration(500)
+                .repeat(1)
+                .playOn(findViewById(R.id.edit_fields_ll_login))
     }
 }

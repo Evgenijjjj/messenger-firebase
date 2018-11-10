@@ -5,7 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.ChatActivity"
-    android:background="@drawable/sunset_bg">
+    android:background="#D3D3D3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sofakingforever.stars.AnimatedStarsView
+            android:id="@+id/stars_chat_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:starsView_bigStarThreshold="30dp"
+            app:starsView_meteoritesColors="@array/meteorites_colors"
+            app:starsView_meteoritesEnabled="false"
+            app:starsView_meteoritesInterval="2000"
+            app:starsView_maxStarSize="30dp"
+            app:starsView_minStarSize="30dp"
+            app:starsView_starColors="@array/star_colors_for_chat_activity"
+            app:starsView_starCount="100" />
+
+    </RelativeLayout>
 
     <EditText
         android:focusable="true"
@@ -23,8 +42,8 @@
         android:hint="@string/type_message"
         android:inputType="textPersonName"
         android:paddingHorizontal="3dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/hintColor"
+        android:textColor="#000"
+        android:textColorHint="@color/inputHintColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/send_button_chat"
         app:layout_constraintStart_toStartOf="parent" />

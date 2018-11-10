@@ -4,9 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.NewMessageActivity">
+    tools:context=".activities.NewMessageActivity"
+    android:background="@color/def_space3">
 
     <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sofakingforever.stars.AnimatedStarsView
+            android:id="@+id/stars_new_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:starsView_bigStarThreshold="10dp"
+            app:starsView_meteoritesColors="@array/meteorites_colors"
+            app:starsView_meteoritesEnabled="true"
+            app:starsView_meteoritesInterval="2000"
+            app:starsView_maxStarSize="16dp"
+            app:starsView_minStarSize="1dp"
+            app:starsView_starColors="@array/star_colors_small"
+            app:starsView_starCount="50" />
+
+    </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:layout_marginTop="?android:actionBarSize"
@@ -18,4 +38,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
