@@ -2,17 +2,17 @@
 
 Register | Login
 :-------------:|:-------------:
-<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/register_activity.png" width="309" height="550">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/login_activity.png" width="309" height="550">
+<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/register_activity.png" width="309" height="618">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/login_activity.png" width="309" height="550">
 
 
 Users List | Search User
 :-------------:|:-------------:
-<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/search_users_list.png" width="309" height="550">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/users_list2.png" width="309" height="550"> 
+<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/search_users_list.png" width="309" height="618">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/users_list2.png" width="309" height="618">
         
         
 Latest Messages | Chat
 :-------------:|:-------------:
-<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/latest_messages_activity.png" width="309" height="550">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/chat.png" width="309" height="550">
+<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/latest_messages_activity.png" width="309" height="618">|<img src="https://github.com/Evgenijjjj/messenger-firebase/blob/master/screenshots/chat.png" width="309" height="550">
 
 
 # How to start
