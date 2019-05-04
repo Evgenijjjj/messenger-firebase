@@ -19,6 +19,4 @@ Latest Messages | Chat
 * Clone Project.
 * Register in [Firebase](https://console.firebase.google.com/) and create a new project.
 * Download new configuration file `google-services.json` and put in *Messenger/app* folder.
-
-
-# [APK Link] (https://github.com/Evgenijjjj/messenger-firebase/blob/master/app-debug.apk)
+* [APK Link](https://github.com/Evgenijjjj/messenger-firebase/blob/master/app-debug.apk)
